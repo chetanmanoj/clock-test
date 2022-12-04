@@ -10,7 +10,8 @@ function MyClock(){
       <Clock format={'HH:mm:ss'}
       ticking={true}
       className="clock"
-      />
+    
+     />
       </div>
     )
 }
