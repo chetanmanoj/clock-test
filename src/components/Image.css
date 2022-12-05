@@ -1,0 +1,6 @@
+.bg{
+    /* background-image: url('../images/ff14.jpg'); */
+    background-size: cover;
+    height: 100vh;
+    max-height: 100%;
+}
