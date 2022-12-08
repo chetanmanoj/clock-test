@@ -24,7 +24,6 @@ function Image(){
       }, []);
       useEffect(() => {
         const intervalID = setInterval(shuffle, 2000);
-        console.log(newBg)
         return () => clearInterval(intervalID);
       }, [shuffle]);
 
