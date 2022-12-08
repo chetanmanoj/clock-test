@@ -27,10 +27,9 @@ function Quotes(){
     'Let love be genuine. Abhor what is evil; hold fast to what is good.',
     'Now faith is the assurance of things hoped for, the conviction of things not seen.',
     'For we walk by faith, not by sight.',
-
+    
   ]
    
-      const time = new Date().getSeconds();  
       // const [Time, setTime] = useState(new Date().getSeconds());
       const [newQuote, setnewQuote] = useState("");
     //   const shuffle = useCallback(() => {
@@ -38,6 +37,8 @@ function Quotes(){
     //     setnewQuote(quotes[index]);
     
     // }, []);
+    
+
     useEffect(() => {
       // setTime = new Date().getSeconds(); 
       // setTime(time) 
@@ -45,7 +46,9 @@ function Quotes(){
       // const intervalID = setInterval(shuffle, 2000);
       // return () => clearInterval(intervalID);
       const interval = setInterval(() => {
+      const time = new Date().getHours();  
       switch(time){
+        
         case 0: setnewQuote(quotes[0]);
         break;
         case 1: setnewQuote(quotes[1]);
@@ -95,16 +98,17 @@ function Quotes(){
         case 23: setnewQuote(quotes[23]);
         break;
     
-        default: setnewQuote(quotes[0]);
+        default: setnewQuote(quotes[22]);
 
 
       }},1000);
       return() => {
         clearInterval(interval)
+      
       }
 
       
-  }, [time])
+  }, [])
       return(
         <p>
         {newQuote}
