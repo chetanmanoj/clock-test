@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 import "./Image.css";
-// import ff14 from "%PUBLIC_URL%/ff14.jpg";
-
 
 function Image() {
   let bgImage = [
@@ -34,7 +32,6 @@ function Image() {
     require("../images/mari.jpg"),
     require("../images/space.jpg"),
     require("../images/wat.jpg"),
-   
   ];
 
   const [newBg, setNewBg] = useState("");
@@ -124,18 +121,11 @@ function Image() {
       clearInterval(interval);
     };
   }, []);
-console.log(newBg)
+  console.log(newBg);
   return (
-  // <div className= "bg" style={{backgroundImage: `url(${newBg})`}} >
-  // <div className= "bg" style={{backgroundImage: `url(https://images.unsplash.com/photo-1484591974057-265bb767ef71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80)`}} >
-      // <div className= "bg" style={{backgroundImage: `url(${newBg})`}} >
-      // <div className= "bg">
-      // {/* <img src={require('../images/ff14.jpg')} alt= '' className="bg"/> */}
-      // <img src={newBg} alt= '' className="bg"/>
-<div className= "bg" style={{backgroundImage: `url(${newBg})`}} >
+    <div className="bg" style={{ backgroundImage: `url(${newBg})` }}>
 
-    
-   </div>
-  )
+    </div>
+  );
 }
 export default Image;
