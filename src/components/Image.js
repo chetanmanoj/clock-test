@@ -38,83 +38,83 @@ function Image() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const time = new Date().getHours();
+      const time = new Date().getSeconds();
       switch (time) {
         case 0:
-          setNewBg(bgImage[0]);
+          setNewBg(bgImage[time]);
           break;
         case 1:
-          setNewBg(bgImage[1]);
+          setNewBg(bgImage[time]);
           break;
         case 2:
-          setNewBg(bgImage[2]);
+          setNewBg(bgImage[time]);
           break;
         case 3:
-          setNewBg(bgImage[3]);
+          setNewBg(bgImage[time]);
           break;
         case 4:
-          setNewBg(bgImage[4]);
+          setNewBg(bgImage[time]);
           break;
         case 5:
-          setNewBg(bgImage[5]);
+          setNewBg(bgImage[time]);
           break;
         case 6:
-          setNewBg(bgImage[6]);
+          setNewBg(bgImage[time]);
           break;
         case 7:
-          setNewBg(bgImage[7]);
+          setNewBg(bgImage[time]);
           break;
         case 8:
-          setNewBg(bgImage[8]);
+          setNewBg(bgImage[time]);
           break;
         case 9:
-          setNewBg(bgImage[9]);
+          setNewBg(bgImage[time]);
           break;
         case 10:
-          setNewBg(bgImage[10]);
+          setNewBg(bgImage[time]);
           break;
         case 11:
-          setNewBg(bgImage[11]);
+          setNewBg(bgImage[time]);
           break;
         case 12:
-          setNewBg(bgImage[12]);
+          setNewBg(bgImage[time]);
           break;
         case 13:
-          setNewBg(bgImage[13]);
+          setNewBg(bgImage[time]);
           break;
         case 14:
-          setNewBg(bgImage[14]);
+          setNewBg(bgImage[time]);
           break;
         case 15:
-          setNewBg(bgImage[15]);
+          setNewBg(bgImage[time]);
           break;
         case 16:
-          setNewBg(bgImage[16]);
+          setNewBg(bgImage[time]);
           break;
         case 17:
-          setNewBg(bgImage[17]);
+          setNewBg(bgImage[time]);
           break;
         case 18:
-          setNewBg(bgImage[18]);
+          setNewBg(bgImage[time]);
           break;
         case 19:
-          setNewBg(bgImage[19]);
+          setNewBg(bgImage[time]);
           break;
         case 20:
-          setNewBg(bgImage[20]);
+          setNewBg(bgImage[time]);
           break;
         case 21:
-          setNewBg(bgImage[21]);
+          setNewBg(bgImage[time]);
           break;
         case 22:
-          setNewBg(bgImage[22]);
+          setNewBg(bgImage[time]);
           break;
         case 23:
-          setNewBg(bgImage[23]);
+          setNewBg(bgImage[time]);
           break;
 
         default:
-          setNewBg(bgImage[2]);
+          setNewBg(bgImage[time]);
       }
     }, 1000);
     return () => {

@@ -32,83 +32,83 @@ function Quotes() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const time = new Date().getHours();
+      const time = new Date().getSeconds();
       switch (time) {
         case 0:
-          setNewQuote(quotes[0]);
+          setNewQuote(quotes[time]);
           break;
         case 1:
-          setNewQuote(quotes[1]);
+          setNewQuote(quotes[time]);
           break;
         case 2:
-          setNewQuote(quotes[2]);
+          setNewQuote(quotes[time]);
           break;
         case 3:
-          setNewQuote(quotes[3]);
+          setNewQuote(quotes[time]);
           break;
         case 4:
-          setNewQuote(quotes[4]);
+          setNewQuote(quotes[time]);
           break;
         case 5:
-          setNewQuote(quotes[5]);
+          setNewQuote(quotes[time]);
           break;
         case 6:
-          setNewQuote(quotes[6]);
+          setNewQuote(quotes[time]);
           break;
         case 7:
-          setNewQuote(quotes[7]);
+          setNewQuote(quotes[time]);
           break;
         case 8:
-          setNewQuote(quotes[8]);
+          setNewQuote(quotes[time]);
           break;
         case 9:
-          setNewQuote(quotes[9]);
+          setNewQuote(quotes[time]);
           break;
         case 10:
-          setNewQuote(quotes[10]);
+          setNewQuote(quotes[time]);
           break;
         case 11:
-          setNewQuote(quotes[11]);
+          setNewQuote(quotes[time]);
           break;
         case 12:
-          setNewQuote(quotes[12]);
+          setNewQuote(quotes[time]);
           break;
         case 13:
-          setNewQuote(quotes[13]);
+          setNewQuote(quotes[time]);
           break;
         case 14:
-          setNewQuote(quotes[14]);
+          setNewQuote(quotes[time]);
           break;
         case 15:
-          setNewQuote(quotes[15]);
+          setNewQuote(quotes[time]);
           break;
         case 16:
-          setNewQuote(quotes[16]);
+          setNewQuote(quotes[time]);
           break;
         case 17:
-          setNewQuote(quotes[17]);
+          setNewQuote(quotes[time]);
           break;
         case 18:
-          setNewQuote(quotes[18]);
+          setNewQuote(quotes[time]);
           break;
         case 19:
-          setNewQuote(quotes[19]);
+          setNewQuote(quotes[time]);
           break;
         case 20:
-          setNewQuote(quotes[20]);
+          setNewQuote(quotes[time]);
           break;
         case 21:
-          setNewQuote(quotes[21]);
+          setNewQuote(quotes[time]);
           break;
         case 22:
-          setNewQuote(quotes[22]);
+          setNewQuote(quotes[time]);
           break;
         case 23:
-          setNewQuote(quotes[23]);
+          setNewQuote(quotes[time]);
           break;
 
         default:
-          setNewQuote(quotes[0]);
+          setNewQuote(quotes[time]);
       }
     }, 1000);
     return () => {
